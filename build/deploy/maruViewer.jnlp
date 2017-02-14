@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="maruViewer.jnlp">
+  <information>
+    <title>maruViewer</title>
+    <vendor>maruViewer</vendor>
+    <description>maruViewer</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="maruViewer.jar" size="24089" download="eager" />
+    <jar href="libs\jsoup-1.10.2.jar" size="350645" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="com.home.application.Main"  name="maruViewer" />
+  <update check="background"/>
+</jnlp>

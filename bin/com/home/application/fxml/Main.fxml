@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.home.controller.MainController">
+   <center>
+      <VBox prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="t_title" strokeType="OUTSIDE" strokeWidth="0.0" text="최근 만화 목록" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            <Button fx:id="btn_viewComics" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="만화 보러 가기" />
+            <ListView fx:id="lv_ComicsList" />
+            <HBox>
+               <children>
+                  <ChoiceBox fx:id="cb_keyField" />
+                  <TextField fx:id="tf_keyWord" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btn_search" mnemonicParsing="false" text="검색" />
+               </children>
+            </HBox>
+            <Button fx:id="btn_searchCancle" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="검색 취소" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
